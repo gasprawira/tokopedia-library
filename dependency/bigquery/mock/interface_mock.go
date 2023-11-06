@@ -8,8 +8,9 @@ import (
 	context "context"
 	reflect "reflect"
 
-	bq "github.com/gasprawira/tokopedia-library/dependency/bq"
 	gomock "github.com/golang/mock/gomock"
+
+	bq "github.com/gasprawira/tokopedia-library/dependency/bigquery"
 )
 
 // MockClient is a mock of Client interface.

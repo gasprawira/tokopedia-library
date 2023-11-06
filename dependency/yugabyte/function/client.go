@@ -1,9 +1,9 @@
 package yugabyte
 
 import (
-	"github.com/gasprawira/tokopedia-library/dependency/yb"
-
 	"github.com/yugabyte/gocql"
+
+	yb "github.com/gasprawira/tokopedia-library/dependency/yugabyte"
 )
 
 type client struct {

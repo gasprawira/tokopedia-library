@@ -7,8 +7,9 @@ package interface_mock
 import (
 	reflect "reflect"
 
-	yb "github.com/gasprawira/tokopedia-library/dependency/yb"
 	gomock "github.com/golang/mock/gomock"
+
+	yb "github.com/gasprawira/tokopedia-library/dependency/yugabyte"
 )
 
 // MockSession is a mock of Session interface.

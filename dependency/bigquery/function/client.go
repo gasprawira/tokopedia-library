@@ -3,7 +3,7 @@ package bigquery
 import (
 	"cloud.google.com/go/bigquery"
 
-	"github.com/gasprawira/tokopedia-library/dependency/bq"
+	bq "github.com/gasprawira/tokopedia-library/dependency/bigquery"
 )
 
 type client struct {
