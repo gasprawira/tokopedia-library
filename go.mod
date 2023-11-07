@@ -9,4 +9,5 @@ require (
 	github.com/gomodule/redigo v1.8.9 // indirect
 	github.com/mna/redisc v1.4.0 // indirect
 	github.com/yugabyte/gocql v0.0.0-20230831121436-1e2272bb6bb6 // indirect
+	google.golang.org/api v0.149.0 // indirect
 )

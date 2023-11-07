@@ -6,12 +6,10 @@ import (
 
 	"github.com/gomodule/redigo/redis"
 	"github.com/mna/redisc"
-
-	rc "github.com/gasprawira/tokopedia-library/dependency/rediscluster"
 )
 
 var (
-	redisCfg *rc.Config
+	redisCfg *Config
 )
 
 type Cluster struct {
@@ -31,7 +29,7 @@ func InitializeRedisCluster(address, password string, maxActive, maxIdle int) (*
 		maxIdle = 3
 	}
 
-	rediscCfg := rc.Config{
+	rediscCfg := Config{
 		Host:               address,
 		RetryCount:         100,
 		RetryDuration:      1,
@@ -52,7 +50,7 @@ func InitializeRedisCluster(address, password string, maxActive, maxIdle int) (*
 }
 
 // InitCluster initialize cluster client
-func initCluster(cfg *rc.Config) (*Cluster, error) {
+func initCluster(cfg *Config) (*Cluster, error) {
 	redisCfg = cfg
 
 	pool := redisc.Cluster{
